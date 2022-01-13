@@ -23,6 +23,12 @@ app.get('/hello', (req, res)=>{
    res.json({ message: 'hey there' })
 })
 
+app.get('/', (req, res)=>{
+   res.send(`
+      <h1> Web 49 is Awesome </h1>
+   `)
+})
+
 app.listen(PORT, ()=>{
    console.log(`listening on port: ${PORT} ${secret}`)
 })
